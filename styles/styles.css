@@ -21,7 +21,8 @@ button {
   background-color: hsl(0, 0%, 95%);
   font-family: "Lexend Deca", sans-serif;
   padding: 10px 25px;
-  border: none;
+  /* to make button border in hover state not move the design */
+  border: 3px solid hsla(0, 0%, 0%, 0);
   border-radius: 25px;
   font-size: medium;
 }
