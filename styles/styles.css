@@ -27,7 +27,7 @@ button {
   font-size: medium;
 }
 
-.flex-container {
+.main-container {
   margin: 50px 0;
   padding: 20px;
 }
@@ -68,4 +68,29 @@ button:hover {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1280px) {
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 300px;
+    height: 100vh;
+    margin: 0;
+  }
+  .card-wrapper {
+    display: flex;
+  }
+
+  .sedans {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+  }
+  .luxury {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
 }
